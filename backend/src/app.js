@@ -22,23 +22,23 @@ app.use(express.static(indexDirectoryPath));
 
 app.get("", (req, res) => {
   res.render("index", {
-    title: "Weather",
+    title: "Clima",
     name: "Tales Leão"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About me",
+    title: "Sobre",
     name: "Tales Leão"
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    title: "Help",
+    title: "Ajuda",
     name: "Tales Leão",
-    message: "If you need something, just ask!"
+    message: "Se precisar de algo, é só falar!"
   });
 });
 
