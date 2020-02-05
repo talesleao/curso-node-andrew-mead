@@ -10,10 +10,10 @@ const forecast = (lat, long, callback) => {
     } else {
       callback(
         undefined,
-        `O tempo agora está ${body.currently.summary} e a temperatura é de ${body.currently.temperature} graus.
+        `${body.daily.data[0].summary} A temperatura atual é de ${body.currently.temperature} graus.
         Tem ${body.currently.precipProbability}% de chance de chover agora.
         Temperatura mínima: ${body.daily.data[0].temperatureLow}.
-        Temperatura Máxima: ${body.daily.data[0].temperatureHigh}`
+        Temperatura Máxima: ${body.daily.data[0].temperatureHigh}.`
       );
     }
   });
